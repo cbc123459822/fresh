@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>產品清單</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    
+    <!-- 雞 -->
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#chickenCanvas">
+        <img src="logo/chicken.jpeg" alt="chicken"> <span>雞肉</span>
+    </button>
+    <div class="offcanvas offcanvas-end" id="chickenCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">chicken</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+                <img src="chicken/骨腿.png" class="card-img-top" alt="骨腿">
+                <div class="card-body">
+                    <h5>骨腿</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="chicken/三節翅.png" class="card-img-top" alt="三節翅">
+                <div class="card-body">
+                    <h5>三節翅</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="chicken/里肌.png" class="card-img-top" alt="chicken">
+                <div class="card-body">
+                    <h5>里肌</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="chicken/三角骨.png" class="card-img-top" alt="三角骨">
+                <div class="card-body">
+                    <h5>三角骨</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="chicken/尾椎.png" class="card-img-top" alt="尾椎">
+                <div class="card-body">
+                    <h5>尾椎</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="chicken/雞胸.png" class="card-img-top" alt="雞胸">
+                <div class="card-body">
+                    <h5>雞胸</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 豬 -->
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#porkCanvas">
+        <img src="logo/pork.jpeg" alt="點心炸物"> <span>豬肉</span>
+    </button>
+    <div class="offcanvas offcanvas-end" id="porkCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">pork</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+                <img src="logo/pork.jpeg" class="card-img-top" alt="pork">
+                <div class="card-body">
+                    <h5>厚切日式炸豬排</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 鴨 -->
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#duckCanvas">
+        <img src="logo/duck.jpeg" alt="點心炸物"> <span>鴨肉</span>
+    </button>
+    <div class="offcanvas offcanvas-end" id="duckCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">duck</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+                <img src="logo/duck.jpeg" class="card-img-top" alt="duck">
+                <div class="card-body">
+                    <h5>酥脆炸鴨排</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 牛 -->
+    <!-- <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#beefCanvas">
+        <img src="logo/beef.jpeg" alt="點心炸物"> <span>牛肉</span>
+    </button>
+    <div class="offcanvas offcanvas-end" id="beefCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">beef</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+                <img src="logo/beef.jpeg" class="card-img-top" alt="beef">
+                <div class="card-body">
+                    <h5>經典炸牛排</h5>
+                    <p style="text-decoration: line-through; color:gray;">原價 $138</p>
+                    <p style="color: red;">會員價 $124</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </body>
 </html>
