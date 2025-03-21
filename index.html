@@ -1,137 +1,367 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>產品清單</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
-    <!-- 雞肉類 -->
-    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#chickenCanvas">
-        <img src="logo/chicken.jpeg" alt="雞肉"> <span>雞肉</span>
+  </head>
+  <body>
+    <!-- 雞肉 -->
+    <button
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#chickenCanvas"
+    >
+      <img src="logo/chicken.jpeg" alt="雞肉" /> <span>雞肉</span>
     </button>
-
+    <!-- 右側欄 -->
     <div class="offcanvas offcanvas-end" id="chickenCanvas">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">雞肉系列</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">雞肉系列</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- 骨腿 -->
+        <div class="card">
+          <img src="chicken/骨腿.png" class="card-img-top" alt="骨腿" />
+          <div class="card-body">
+            <h1>骨腿</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="chicken/骨腿.png" class="card-img-top" alt="骨腿">
-                        <div class="card-body">
-                            <h5>骨腿</h5>
-                            <p class="text-muted text-decoration-line-through">原價 $138</p>
-                            <p class="text-danger fw-bold">會員價 $124</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <!-- 產品規格表 -->
-                    <table class="table table-bordered table-striped text-center">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>規格</th>
-                                <th>平均重量（克）</th>
-                                <th>每箱隻數（約）</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>T4</td><td>100-120</td><td>100-110</td></tr>
-                            <tr><td>T5</td><td>120-140</td><td>90-100</td></tr>
-                            <tr><td>T6</td><td>140-160</td><td>80-90</td></tr>
-                            <tr><td>T7</td><td>160-180</td><td>70-80</td></tr>
-                            <tr><td>T8</td><td>180-200</td><td>60-70</td></tr>
-                            <tr><td>T9</td><td>200-220</td><td>55-60</td></tr>
-                            <tr><td>T10</td><td>220-240</td><td>50-55</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="chicken/三節翅.png" class="card-img-top" alt="三節翅">
-                        <div class="card-body">
-                            <h5>三節翅</h5>
-                            <p class="text-muted text-decoration-line-through">原價 $138</p>
-                            <p class="text-danger fw-bold">會員價 $124</p>
-                        </div>
-                    </div>
-                    <table class="table table-bordered table-striped text-center">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>等級 (W數)</th>
-                                <th>平均重量 (克/隻)</th>
-                                <th>每件約隻數 (18kg/件)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>W5</td><td>50-60</td><td>300-360</td></tr>
-                            <tr><td>W6</td><td>60-70</td><td>257-300</td></tr>
-                            <tr><td>W7</td><td>70-80</td><td>225-257</td></tr>
-                            <tr><td>W8</td><td>80-90</td><td>200-225</td></tr>
-                            <tr><td>W9</td><td>90-100</td><td>180-200</td></tr>
-                            <tr><td>W10</td><td>100-110</td><td>163-180</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-4"><div class="card"><img src="chicken/里肌.png" class="card-img-top" alt="里肌"><div class="card-body"><h5>里肌</h5><p class="text-muted text-decoration-line-through">原價 $138</p><p class="text-danger fw-bold">會員價 $124</p></div></div></div>
-                <div class="col-md-4"><div class="card"><img src="chicken/三角骨.png" class="card-img-top" alt="三角骨"><div class="card-body"><h5>三角骨</h5><p class="text-muted text-decoration-line-through">原價 $138</p><p class="text-danger fw-bold">會員價 $124</p></div></div></div>
-            </div>
+        <!-- 產品規格表 -->
+        <table class="table table-bordered table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>等級 (W數)</th>
+              <th>平均重量 (克/隻)</th>
+              <th>每件約隻數 (18kg/件)</th>
+              <th>破盤價 （元/公斤）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T4</td>
+              <td>100-120</td>
+              <td>100-110</td>
+              <td>99</td>
+            </tr>
+            <tr>
+              <td>T5</td>
+              <td>120-140</td>
+              <td>90-100</td>
+            </tr>
+            <tr>
+              <td>T6</td>
+              <td>140-160</td>
+              <td>80-90</td>
+            </tr>
+            <tr>
+              <td>T7</td>
+              <td>160-180</td>
+              <td>70-80</td>
+            </tr>
+            <tr>
+              <td>T8</td>
+              <td>180-200</td>
+              <td>60-70</td>
+            </tr>
+            <tr>
+              <td>T9</td>
+              <td>200-220</td>
+              <td>55-60</td>
+            </tr>
+            <tr>
+              <td>T10</td>
+              <td>220-240</td>
+              <td>50-55</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 三節翅 -->
+        <div class="card">
+          <img src="chicken/三節翅.png" class="card-img-top" alt="三節翅" />
+          <div class="card-body">
+            <h1>三節翅</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
         </div>
+        <!-- 產品規格表 -->
+        <table class="table table-bordered table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>等級 (W數)</th>
+              <th>平均重量 (克/隻)</th>
+              <th>每件約隻數 (18kg/件)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>W5</td>
+              <td>50-60</td>
+              <td>300-360</td>
+            </tr>
+            <tr>
+              <td>W6</td>
+              <td>60-70</td>
+              <td>257-300</td>
+            </tr>
+            <tr>
+              <td>W7</td>
+              <td>70-80</td>
+              <td>225-257</td>
+            </tr>
+            <tr>
+              <td>W8</td>
+              <td>80-90</td>
+              <td>200-225</td>
+            </tr>
+            <tr>
+              <td>W9</td>
+              <td>90-100</td>
+              <td>180-200</td>
+            </tr>
+            <tr>
+              <td>W10</td>
+              <td>100-110</td>
+              <td>163-180</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 雞胸 -->
+        <div class="card">
+          <img src="chicken/雞胸.png" class="card-img-top" alt="雞胸" />
+          <div class="card-body">
+            <h1>雞胸</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!-- 產品規格表 -->
+        <table class="table table-bordered table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>等級</th>
+              <th>平均重量 (克/隻)</th>
+              <th>每件約隻數 (18kg/件)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1級</td>
+              <td>130-170</td>
+              <td>106-138</td>
+            </tr>
+            <tr>
+              <td>2級</td>
+              <td>170-210</td>
+              <td>86-106</td>
+            </tr>
+            <tr>
+              <td>3級</td>
+              <td>210-250</td>
+              <td>72-86</td>
+            </tr>
+            <tr>
+              <td>4級</td>
+              <td>250-290</td>
+              <td>62-72</td>
+            </tr>
+            <tr>
+              <td>5級</td>
+              <td>290-330</td>
+              <td>55-62</td>
+            </tr>
+            <tr>
+              <td>6級</td>
+              <td>330-370</td>
+              <td>49-55</td>
+            </tr>
+            <tr>
+              <td>特大</td>
+              <td>370-430</td>
+              <td>42-49</td>
+            </tr>
+            <tr>
+              <td>超大</td>
+              <td>430-500</td>
+              <td>36-42</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 雞排 -->
+        <div class="card">
+          <img src="chicken/雞排.png" class="card-img-top" alt="雞排" />
+          <div class="card-body">
+            <h1>雞排</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!-- 產品規格表 -->
+        <table class="table table-bordered table-striped text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>規格</th>
+              <th>平均重量 (克/片)</th>
+              <th>每件約片數 (18kg/件)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TS3.5</td>
+              <td>175</td>
+              <td>102</td>
+            </tr>
+            <tr>
+              <td>TS3</td>
+              <td>180-220</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>TS4</td>
+              <td>220-260</td>
+              <td>82</td>
+            </tr>
+            <tr>
+              <td>TS5</td>
+              <td>250-300</td>
+              <td>72</td>
+            </tr>
+            <tr>
+              <td>TS6</td>
+              <td>300-350</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>350-400</td>
+              <td>51</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 里肌 -->
+        <div class="card">
+          <img src="chicken/里肌.png" class="card-img-top" alt="里肌" />
+          <div class="card-body">
+            <h1>里肌</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!--三角骨 -->
+        <div class="card">
+          <img src="chicken/三角骨.png" class="card-img-top" alt="三角骨" />
+          <div class="card-body">
+            <h1>三角骨</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!-- 尾椎 -->
+        <div class="card">
+          <img src="chicken/尾椎.png" class="card-img-top" alt="尾椎" />
+          <div class="card-body">
+            <h1>尾椎</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!-- 雞爪 -->
+        <div class="card">
+          <img src="chicken/雞爪.png" class="card-img-top" alt="雞爪" />
+          <div class="card-body">
+            <h1>雞爪</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!-- 雞胗 -->
+        <div class="card">
+          <img src="chicken/雞胗.png" class="card-img-top" alt="雞胗" />
+          <div class="card-body">
+            <h1>雞胗</h1>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
     </div>
 
     <!-- 豬肉類 -->
-    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#porkCanvas">
-        <img src="logo/pork.jpeg" alt="豬肉"> <span>豬肉</span>
+    <button
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#porkCanvas"
+    >
+      <img src="logo/pork.jpeg" alt="豬肉" /> <span>豬肉</span>
     </button>
 
     <div class="offcanvas offcanvas-end" id="porkCanvas">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">豬肉系列</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">豬肉系列</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card">
+          <img src="logo/pork.jpeg" class="card-img-top" alt="豬肉" />
+          <div class="card-body">
+            <h5>厚切日式炸豬排</h5>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="card">
-                <img src="logo/pork.jpeg" class="card-img-top" alt="豬肉">
-                <div class="card-body">
-                    <h5>厚切日式炸豬排</h5>
-                    <p class="text-muted text-decoration-line-through">原價 $138</p>
-                    <p class="text-danger fw-bold">會員價 $124</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <!-- 鴨肉類 -->
-    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#duckCanvas">
-        <img src="logo/duck.jpeg" alt="鴨肉"> <span>鴨肉</span>
+    <button
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#duckCanvas"
+    >
+      <img src="logo/duck.jpeg" alt="鴨肉" /> <span>鴨肉</span>
     </button>
 
     <div class="offcanvas offcanvas-end" id="duckCanvas">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">鴨肉系列</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">鴨肉系列</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card">
+          <img src="logo/duck.jpeg" class="card-img-top" alt="鴨肉" />
+          <div class="card-body">
+            <h5>酥脆炸鴨排</h5>
+            <p class="text-muted text-decoration-line-through">原價 $138</p>
+            <p class="text-danger fw-bold">會員價 $124</p>
+          </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="card">
-                <img src="logo/duck.jpeg" class="card-img-top" alt="鴨肉">
-                <div class="card-body">
-                    <h5>酥脆炸鴨排</h5>
-                    <p class="text-muted text-decoration-line-through">原價 $138</p>
-                    <p class="text-danger fw-bold">會員價 $124</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

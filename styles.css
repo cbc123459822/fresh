@@ -56,15 +56,7 @@ th, td {
     padding: 8px;
     text-align: center;
 }
-
-/* RWD 設定：大螢幕時不使用滿版 */
-@media (min-width: 768px) {
-    .offcanvas.offcanvas-end {
-        width: 50vw !important;
-    }
-}
-@media (min-width: 1024px) {
-    .offcanvas.offcanvas-end {
-        width: 40vw !important;
-    }
+.offcanvas-body{
+    display: grid;
+    grid-template-columns: 1fr;
 }
